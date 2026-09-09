@@ -22,10 +22,10 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Saya Fadhil Hazza Iswadinata</ThemedText>
+        <ThemedText type="subtitle">Saya adalah mahasiswa Informatika</ThemedText>
         <ThemedText>
-          Saya dari Prodi Informatika. 
-          Saya Hobi menonton film Fiksi seperti<ThemedText type="defaultSemiBold"> Marvel</ThemedText> dan lain lain.
+          Saya senang bermain game terutama game cerita seperti Resident Evil. 
+          Dan saya Hobi menonton film Fiksi seperti<ThemedText type="defaultSemiBold"> Marvel</ThemedText> dan lain lain.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
