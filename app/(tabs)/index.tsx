@@ -6,9 +6,10 @@ import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Link } from 'expo-router';
+// Ini diatas untuk perihal ambil - ambil file
 
-export default function HomeScreen() {
-  return (
+ export default function HomeScreen() { //ini membuat fungsi yang bisa diambil untuk file lain
+  return ( //ini untuk menampilkan
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
@@ -17,8 +18,10 @@ export default function HomeScreen() {
           style={styles.reactLogo}
         />
       }>
+
+        /* nah mulai dari sini adalah bagian utamanya */
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome Fadhil!</ThemedText>
+        <ThemedText type="title">Halo, saya Fadhil</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
@@ -28,6 +31,21 @@ export default function HomeScreen() {
           Dan saya Hobi menonton film Fiksi seperti<ThemedText type="defaultSemiBold"> Marvel</ThemedText> dan lain lain.
         </ThemedText>
       </ThemedView>
+       
+   {/*gua diminta untuk membuat nama : Fadhil , umur : 19, prodi : informatika.
+      Dengan syarat variabel , function, parameter, variabel digunakan benar diJSX, 
+      struktur component-nya tidak rusak, syntax TypeScript/JSX-nya benar */}
+
+      <ThemedView style={styles.titleContainer}>
+        <ThemedText type="title">Halo, Saya fadhil</ThemedText>
+        <HelloWave />
+      </ThemedView>
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type="subtitle">Nama : Fadhil</ThemedText>
+        <ThemedText type="subtitle">Umur : 19</ThemedText>
+        <ThemedText type="subtitle">Prodi : Informatika</ThemedText>
+      </ThemedView>
+
       <ThemedView style={styles.stepContainer}>
         <Link href="/modal">
           <Link.Trigger>
